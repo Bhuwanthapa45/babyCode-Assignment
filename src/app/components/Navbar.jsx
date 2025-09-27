@@ -8,14 +8,15 @@ export default function Navbar() {
   const navItems = [
     { id: "home", label: "Home", icon: <Home size={22} /> },
     { id: "courses", label: "Courses", icon: <BookOpen size={22} /> },
-    { id: "about", label: "About", icon: <Users size={22} /> },
-    { id: "contact", label: "Contact", icon: <Phone size={22} /> },
+    { id: "stories", label: "Stories", icon: <Users size={22} /> },
+    { id: "shop", label: "Shop", icon: <Phone size={22} /> },
+     { id: "feedback", label: "Feedback", icon: <Phone size={22} /> },
   ];
 
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex justify-between items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg">
+      <nav className="hidden md:flex justify-between items-center px-8 py-4 bg-gradient-to-r from-blue-100 to-blue-200 text-white shadow-lg">
         {/* Logo */}
         <div className="text-2xl font-bold">Baby Code</div>
 
