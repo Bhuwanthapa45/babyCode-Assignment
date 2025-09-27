@@ -21,18 +21,18 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex justify-between items-center px-8 py-3 bg-gray-50 border-b border-gray-200 relative z-50">
+      <nav className="hidden md:flex justify-between items-center px-8 py-3 bg-[#FAFDEF] border-b border-gray-200 relative z-50">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-white font-bold">
             BC
           </div>
-          <span className="text-xl font-bold text-gray-800">Baby Code</span>
+          <span className="text-xl font-bold text-[#1E3B4B]">Baby Code</span>
         </div>
 
         {/* Links */}
-        <div className="bg-gray-200 rounded-lg px-4 py-2">
-          <ul className="flex space-x-6 text-sm font-medium text-gray-700 relative">
+        <div className="bg-[#D8D7D3] rounded-lg px-4 py-2">
+          <ul className="flex space-x-6 text-sm font-medium text-[#1E3B4B] relative">
             {navItems.map((item) => (
               <li
                 key={item.id}
