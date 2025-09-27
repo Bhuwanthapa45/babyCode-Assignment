@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Right side buttons */}
         <div className="flex items-center space-x-4">
           <button className="text-sm font-medium text-gray-700 hover:text-gray-900">
-            Login
+            Sign In
           </button>
           <button className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-900 transition">
             Sign Up

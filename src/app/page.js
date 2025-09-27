@@ -3,6 +3,10 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
+import HerosectionSecond from './components/HerosectionSecond';
+import MarqueeBanner from './components/MarqueeBanner';
+
+
 
 const Homepage = () => {
   const { scrollYProgress } = useScroll(); // tracks whole page scroll
@@ -15,6 +19,8 @@ const Homepage = () => {
       <div className="relative z-10">
         <Navbar />
         <Herosection />
+        <MarqueeBanner/>
+        <HerosectionSecond />
         {/* Add more sections below if needed */}
       </div>
     </div>
