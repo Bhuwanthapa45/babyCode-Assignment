@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex justify-between items-center px-8 py-3 bg-[#FAFDEF] border-b border-gray-200 relative z-50">
+      <nav className="hidden md:flex justify-between items-center px-8 py-3  border-b border-gray-200 relative z-50">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-white font-bold">
@@ -31,12 +31,12 @@ export default function Navbar() {
         </div>
 
         {/* Links */}
-        <div className="bg-[#D8D7D3] rounded-lg px-4 py-2">
-          <ul className="flex space-x-6 text-sm font-medium text-[#1E3B4B] relative">
+        <div className="bg-[#1E3B4B] rounded-lg px-4 py-2">
+          <ul className="flex space-x-6 text-sm font-medium text-white relative">
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="relative group cursor-pointer px-3 py-2 hover:text-gray-900 transition-colors"
+                className="relative group cursor-pointer px-3 py-2 hover:text-[#C2F84F] transition-colors"
               >
                 {item.label}
 
