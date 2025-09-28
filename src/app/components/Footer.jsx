@@ -47,8 +47,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo column */}
           <div className="flex flex-col">
-            <div className="mb-6">
+            <div className="mb-6 flex">
+                 <img className="w-[5vh]" src="./logobc.png" alt="BC LOGO" />
               <div className="text-2xl font-bold">BabyCode</div>
+             
             </div>
           </div>
 

@@ -36,27 +36,27 @@ const TestimonialCard = ({ name, review, image, rating }) => {
 const TestimonialsCarousel = () => {
   const testimonials = [
     {
-      name: "Anjali Sharma",
+      name: "Sam Dsuza",
       review: "This platform helped me improve my IELTS speaking score significantly. Highly recommend!",
-      image: "/students/anjali.png",
+      image: "/Sam.jpg",
       rating: 5,
     },
     {
-      name: "Rohan Mehta",
+      name: "Alia Sharma",
       review: "The AI-powered mock tests are amazing. I could track my progress and see instant feedback.",
-      image: "/students/rohan.png",
+      image: "/alia.jpg",
       rating: 4,
     },
     {
-      name: "Sofia Patel",
+      name: "Lana Brinsky",
       review: "Loved the personalized practice tests. My PTE score improved faster than I expected!",
-      image: "/students/sofia.png",
+      image: "/lana.jpg",
       rating: 5,
     },
     {
-      name: "Vikram Singh",
+      name: "Nina West",
       review: "The speaking practice sessions are realistic and extremely helpful for exam preparation.",
-      image: "/students/vikram.png",
+      image: "/nina.jpg",
       rating: 4,
     }
   ];
