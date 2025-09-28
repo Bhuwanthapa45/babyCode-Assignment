@@ -1,5 +1,9 @@
 import React from 'react'
 import { CustomHoverExpand } from './CustomHoverExpand'
+import TestimonialsCarousel from './TestimonialCard'
+
+
+
 
 const HerosectionSecond = () => {
   return (
@@ -21,6 +25,10 @@ const HerosectionSecond = () => {
           <CustomHoverExpand />
         </div>
       </div>
+        {/* Testimonials Section */}
+        <TestimonialsCarousel />
+        
+
     </section>
   )
 }

@@ -5,24 +5,28 @@ import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 import HerosectionSecond from './components/HerosectionSecond';
 import MarqueeBanner from './components/MarqueeBanner';
-
+import Footer from './components/Footer';
 
 
 const Homepage = () => {
   const { scrollYProgress } = useScroll(); // tracks whole page scroll
 
   return (
-    <div className="relative bg-[#FAFDEF]">
-      {/* Stroke animation for whole page */}
-      <LinePath scrollYProgress={scrollYProgress} className="absolute inset-0 z-0" />
+    <div className="relative bg-[#FAFDEF] overflow-x-hidden">
+      {/* Stroke animation for larger screens only */}
+      <div className="hidden sm:block absolute inset-0 z-0">
+        <LinePath scrollYProgress={scrollYProgress} />
+      </div>
 
       <div className="relative z-10">
         <Navbar />
         <Herosection />
-        <MarqueeBanner/>
+        <MarqueeBanner />
         <HerosectionSecond />
-        {/* Add more sections below if needed */}
+          <Footer />
+        
       </div>
+
     </div>
   );
 };
@@ -30,12 +34,11 @@ const Homepage = () => {
 export default Homepage;
 
 // --- LinePath Component ---
-const LinePath = ({ scrollYProgress, className }) => {
+const LinePath = ({ scrollYProgress }) => {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <svg
-      className={className}
       width="1278"
       height="2319"
       viewBox="0 0 1278 2319"

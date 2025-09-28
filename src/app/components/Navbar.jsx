@@ -87,7 +87,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Bottom Nav */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-t md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-t md:hidden z-[100]">
         <ul className="flex justify-around items-center py-2">
           {navItems.map((item) => (
             <li
