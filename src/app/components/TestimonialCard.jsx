@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 // Single Testimonial Card
 const TestimonialCard = ({ name, review, image, rating }) => {
@@ -29,40 +29,44 @@ const TestimonialCard = ({ name, review, image, rating }) => {
       </div>
       <p className="text-gray-700 text-sm">{review}</p>
     </motion.div>
-  );
-};
+  )
+}
 
 // Carousel Container with Auto Scrolling
 const TestimonialsCarousel = () => {
   const testimonials = [
     {
-      name: "Sam Dsuza",
-      review: "This platform helped me improve my IELTS speaking score significantly. Highly recommend!",
-      image: "/Sam.jpg",
+      name: 'Sam Dsuza',
+      review:
+        'This platform helped me improve my IELTS speaking score significantly. Highly recommend!',
+      image: '/Sam.jpg',
       rating: 5,
     },
     {
-      name: "Alia Sharma",
-      review: "The AI-powered mock tests are amazing. I could track my progress and see instant feedback.",
-      image: "/alia.jpg",
+      name: 'Alia Sharma',
+      review:
+        'The AI-powered mock tests are amazing. I could track my progress and see instant feedback.',
+      image: '/alia.jpg',
       rating: 4,
     },
     {
-      name: "Lana Brinsky",
-      review: "Loved the personalized practice tests. My PTE score improved faster than I expected!",
-      image: "/lana.jpg",
+      name: 'Lana Brinsky',
+      review:
+        'Loved the personalized practice tests. My PTE score improved faster than I expected!',
+      image: '/lana.jpg',
       rating: 5,
     },
     {
-      name: "Nina West",
-      review: "The speaking practice sessions are realistic and extremely helpful for exam preparation.",
-      image: "/nina.jpg",
+      name: 'Nina West',
+      review:
+        'The speaking practice sessions are realistic and extremely helpful for exam preparation.',
+      image: '/nina.jpg',
       rating: 4,
-    }
-  ];
+    },
+  ]
 
   // Duplicate testimonials to make infinite loop effect
-  const repeatedTestimonials = [...testimonials, ...testimonials];
+  const repeatedTestimonials = [...testimonials, ...testimonials]
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8  relative">
@@ -71,7 +75,8 @@ const TestimonialsCarousel = () => {
           What Our Students Say
         </h2>
         <p className="text-gray-600 mt-4 text-base sm:text-lg">
-          Real experiences from learners who boosted their scores using our platform
+          Real experiences from learners who boosted their scores using our
+          platform
         </p>
       </div>
 
@@ -92,7 +97,7 @@ const TestimonialsCarousel = () => {
         ))}
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default TestimonialsCarousel;
+export default TestimonialsCarousel

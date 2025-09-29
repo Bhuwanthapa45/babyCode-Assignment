@@ -1,15 +1,14 @@
-'use client';
-import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Herosection from './components/Herosection';
-import HerosectionSecond from './components/HerosectionSecond';
-import MarqueeBanner from './components/MarqueeBanner';
-import Footer from './components/Footer';
-
+'use client'
+import React from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import Navbar from './components/Navbar'
+import Herosection from './components/Herosection'
+import HerosectionSecond from './components/HerosectionSecond'
+import MarqueeBanner from './components/MarqueeBanner'
+import Footer from './components/Footer'
 
 const Homepage = () => {
-  const { scrollYProgress } = useScroll(); // tracks whole page scroll
+  const { scrollYProgress } = useScroll() // tracks whole page scroll
 
   return (
     <div className="relative bg-[#FAFDEF] overflow-x-hidden">
@@ -23,19 +22,17 @@ const Homepage = () => {
         <Herosection />
         <MarqueeBanner />
         <HerosectionSecond />
-          <Footer />
-        
+        <Footer />
       </div>
-
     </div>
-  );
-};
+  )
+}
 
-export default Homepage;
+export default Homepage
 
 // --- LinePath Component ---
 const LinePath = ({ scrollYProgress }) => {
-  const pathLength = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const pathLength = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
   return (
     <svg
@@ -56,5 +53,5 @@ const LinePath = ({ scrollYProgress }) => {
         }}
       />
     </svg>
-  );
-};
+  )
+}

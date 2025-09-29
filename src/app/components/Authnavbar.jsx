@@ -1,5 +1,5 @@
-"use client";
-import Link from "next/link";
+'use client'
+import Link from 'next/link'
 
 export default function AuthNavbar() {
   return (
@@ -18,5 +18,5 @@ export default function AuthNavbar() {
         ← Back to Home
       </Link>
     </nav>
-  );
+  )
 }

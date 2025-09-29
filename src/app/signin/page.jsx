@@ -1,12 +1,11 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useState } from "react";
-import AuthNavbar from "../components/Authnavbar";
-
+import Link from 'next/link'
+import { useState } from 'react'
+import AuthNavbar from '../components/Authnavbar'
 
 export default function SignInPage() {
-  const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({ email: '', password: '' })
 
   return (
     <div className="min-h-screen bg-[#FAFDEF] flex flex-col">
@@ -58,13 +57,16 @@ export default function SignInPage() {
 
           {/* Link to Sign Up */}
           <p className="text-center text-sm text-gray-600 mt-6">
-            Don’t have an account?{" "}
-            <Link href="/signup" className="text-black font-medium hover:underline">
+            Don’t have an account?{' '}
+            <Link
+              href="/signup"
+              className="text-black font-medium hover:underline"
+            >
               Sign Up
             </Link>
           </p>
         </div>
       </div>
     </div>
-  );
+  )
 }

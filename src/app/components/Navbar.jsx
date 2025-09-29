@@ -1,23 +1,23 @@
-"use client";
-import { useState } from "react";
-import { Home, BookOpen, Users, Phone, Airplay } from "lucide-react";
-import Link from "next/link";
+'use client'
+import { useState } from 'react'
+import { Home, BookOpen, Users, Phone, Airplay } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState('home')
 
   const navItems = [
-    { id: "home", label: "Home", icon: <Home size={22} /> },
+    { id: 'home', label: 'Home', icon: <Home size={22} /> },
     {
-      id: "courses",
-      label: "Courses",
+      id: 'courses',
+      label: 'Courses',
       icon: <BookOpen size={22} />,
-      dropdown: ["IELTS", "PTE", "TOEFL"],
+      dropdown: ['IELTS', 'PTE', 'TOEFL'],
     },
-    { id: "stories", label: "Stories", icon: <Users size={22} /> },
-    { id: "shop", label: "Shop", icon: <Phone size={22} /> },
-    { id: "feedback", label: "Feedback", icon: <Airplay size={22} /> },
-  ];
+    { id: 'stories', label: 'Stories', icon: <Users size={22} /> },
+    { id: 'shop', label: 'Shop', icon: <Phone size={22} /> },
+    { id: 'feedback', label: 'Feedback', icon: <Airplay size={22} /> },
+  ]
 
   return (
     <>
@@ -25,8 +25,10 @@ export default function Navbar() {
       <nav className="hidden md:flex justify-between items-center px-8 py-3 border-b border-gray-200 relative z-50">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img className="w-[5vh]" src="./logobc.png" alt="BC LOGO" />
-          <span className="text-xl font-bold text-[#1E3B4B]">Baby Code</span>
+          <Link href={'/'}>
+            <img className="w-[5vh]" src="./logobc.png" alt="BC LOGO" />
+            <span className="text-xl font-bold text-[#1E3B4B]">Baby Code</span>
+          </Link>
         </div>
 
         {/* Links */}
@@ -80,8 +82,10 @@ export default function Navbar() {
       <div className="md:hidden fixed top-0 left-0 right-0 bg-gray-50 border-b border-gray-200 flex justify-between items-center px-4 py-2 shadow-sm z-50">
         {/* Logo / Name */}
         <div className="flex items-center space-x-2">
-          <img className="w-[5vh]" src="./logobc.png" alt="BC LOGO" />
-          <span className="text-base font-bold text-gray-800">Baby Code</span>
+          <Link href={'/'}>
+            <img className="w-[5vh]" src="./logobc.png" alt="BC LOGO" />
+            <span className="text-base font-bold text-gray-800">Baby Code</span>
+          </Link>
         </div>
 
         {/* Sign In button */}
@@ -101,7 +105,7 @@ export default function Navbar() {
               key={item.id}
               onClick={() => setActive(item.id)}
               className={`flex flex-col items-center cursor-pointer ${
-                active === item.id ? "text-[#C2F84F]" : "text-white"
+                active === item.id ? 'text-[#C2F84F]' : 'text-white'
               }`}
             >
               {item.icon}
@@ -111,5 +115,5 @@ export default function Navbar() {
         </ul>
       </div>
     </>
-  );
+  )
 }
